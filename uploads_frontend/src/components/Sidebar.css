@@ -1,0 +1,95 @@
+.Sidebar-top-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    height: 100%;
+    overflow-y: scroll;
+    min-width: 210px;
+
+}
+.Sidebar-top-div::-webkit-scrollbar{
+    display: none;
+}
+.Sidebar-inner-div{
+    display: flex;
+    flex-direction: column;
+
+}
+.Sidebar-first-link{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 4px;
+    width: 190px;
+    align-items: center;
+}
+.logo{
+    color: rgb(255, 0, 68);
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    width: 100%;
+}
+.Sidebar-options{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 20px;
+}
+.isNotActiveStyle{
+    display: flex;
+    align-items: center;
+    padding: 3px 2px;
+    gap: 16px;
+    color: rgb(63, 63, 63);
+    transition: all 0.1s ease-in-out;
+    
+}
+.isNotActiveStyle:hover{
+    color: black;
+}
+.isActiveStyle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: bolder;
+    font-weight: 700;
+    border-right: 2px solid black;
+    transition: all 0.1s ease-in-out;
+
+}
+.Discover-h3{
+    margin-top: 8px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+.user-profile-link{
+    display: flex;
+    padding: 10px;
+    gap: 4px;
+    align-items: center;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.101);
+}
+.user-profile-link p{
+    font-weight: 600;
+}
+.user-profile-link-image{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+
+.category-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}

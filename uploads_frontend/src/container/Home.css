@@ -1,0 +1,93 @@
+.home-top-div{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.138);
+    flex-direction: column;
+    height: 100vh;
+    transform: height 1s ease-out;
+}
+.Sidebar-div{
+    display: none;
+    height: 100vh;
+    flex-direction: initial;
+}
+.Sidebar-div2{
+    display: flex;
+    flex-direction: column;
+}
+.HiMenu{
+    font-size: 33px;
+    cursor: pointer;
+
+}
+.logo{
+    color: rgb(255, 0, 68);
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+}
+.AiFillCloseCircle-top-div{
+    position: fixed;
+    width: 80%;
+    background-color: white;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.148);
+    z-index: 10;
+    animation: ping 0.2s linear;
+}
+
+@keyframes ping {
+    from{
+        width: 30%;
+    }
+    to{
+        width: 80%;
+    }
+}
+.AiFillCloseCircle-inner-div{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 6px;
+}
+.AiFillCloseCircle{
+    font-size: 25px;
+    cursor: pointer;
+}
+.scrollRef{
+    padding-bottom:  8px;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    
+}
+.scrollRef::-webkit-scrollbar{
+    display: none;
+}
+.sidebar-div2-inner{
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.148);
+}
+.profile-dp{
+    width: 50px;
+    border-radius: 50%;
+}
+@media screen and (min-width: 768px){
+    .home-top-div{
+        flex-direction: row;
+    }
+    .Sidebar-div{
+        display: flex;
+    }
+    .Sidebar-div2{
+        display: none;
+    }
+}

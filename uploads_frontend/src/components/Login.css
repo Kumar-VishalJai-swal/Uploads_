@@ -1,0 +1,61 @@
+.login-toop-div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.login-second-div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.login-second-div img{
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+}
+.login-div-shadow{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.782);
+}
+.login_div{
+    padding: 0.7rem 3rem 2.5rem 3rem;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_div h1{
+    color: rgb(255, 0, 68);
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+.google-button{
+    box-shadow: 5px;
+}
+.login-button{
+    background-color: rgb(255, 0, 68);
+    color: white;
+    display: flex;
+    padding: 0.7rem 1rem;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.FcGoogle{
+    margin-right: 12px;
+    
+}

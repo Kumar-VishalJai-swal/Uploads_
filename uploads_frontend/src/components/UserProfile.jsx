@@ -63,24 +63,18 @@ const UserProfile = () => {
           <div className="user-profile-fourth-div">
             <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" className='randomImage' alt="banner---pic" />
             <div className='user-profile-div'>
-              <img src={user.image} className='user-profile-image'  alt="" />
+              {user.image !== "null" ? (
+                <img src={user?.image} className='user-profile-image'  alt="" />
+              ) : (
+                <img src='https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o='/>
+              )
+              }
+              
             </div>
             <h1 className='profile-username'>{user.userName}</h1>
           </div>
           <div className='user-logout'>
             {userId === user._id && (
-            //    <GoogleLogout 
-            //    clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
-            //    render={(renderProps) => (
-            //        <button type='button' className='logout-button' onClick={renderProps.onClick} disabled={renderProps.disabled}>
-            //          <AiOutlineLogout color='red' fontSize={21}/>Logout
-            //        </button>
-            //    )}
-            //    onLogooutSuccess={logout}
-               
-            //    cookiePolicy={"single_host_origin"}
-               
-            //  />
             <a href="/login">
               <button type='button' className='logout-button'>
                      <AiOutlineLogout color='red' fontSize={21}/>Logout

@@ -69,18 +69,23 @@ const UserProfile = () => {
           </div>
           <div className='user-logout'>
             {userId === user._id && (
-               <GoogleLogout 
-               clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
-               render={(renderProps) => (
-                   <button type='button' className='logout-button' onClick={renderProps.onClick} disabled={renderProps.disabled}>
+            //    <GoogleLogout 
+            //    clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
+            //    render={(renderProps) => (
+            //        <button type='button' className='logout-button' onClick={renderProps.onClick} disabled={renderProps.disabled}>
+            //          <AiOutlineLogout color='red' fontSize={21}/>Logout
+            //        </button>
+            //    )}
+            //    onLogooutSuccess={logout}
+               
+            //    cookiePolicy={"single_host_origin"}
+               
+            //  />
+            <a href="/login">
+              <button type='button' className='logout-button'>
                      <AiOutlineLogout color='red' fontSize={21}/>Logout
-                   </button>
-               )}
-               onLogooutSuccess={logout}
-               
-               cookiePolicy={"single_host_origin"}
-               
-             />
+              </button>
+            </a>
             )}
           </div>
         </div>
